@@ -1,7 +1,7 @@
 <?php
 
 $email    = $_POST["email"];
-$senha = $_POST["senha"];
+$senha = md5( $_POST["senha"]);
 
 $server_name = "localhost";
 $user_name   = "root";

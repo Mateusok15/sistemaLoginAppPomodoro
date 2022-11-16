@@ -2,7 +2,7 @@
  
 $nome   = isset( $_GET["nome"])? $_GET["nome"] : "";
 $email  = isset( $_GET["email"])? $_GET["email"] : "";
-$senha  = isset( $_GET["senha"])? $_GET["senha"] : "";
+$senha  = md5( isset( $_GET["senha"])? $_GET["senha"] : "");
  
 $acao   = $_GET["acao"];
  
